@@ -1,0 +1,386 @@
+{
+    "s1": [
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "default_action": true,
+            "action_name": "PubSubIngress.drop",
+            "action_params": { }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.1.1", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:01:11",
+                "port": 1
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.2.2", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:02:22",
+                "port": 2
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.3.3", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:03:33",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.4.4", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:04:44",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.5.5", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:05:55",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.6.6", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:06:66",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.7.7", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:07:77",
+                "port": 5
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.8.8", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:08:88",
+                "port": 5
+            }
+        }
+    ],
+    "s2": [
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "default_action": true,
+            "action_name": "PubSubIngress.drop",
+            "action_params": { }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.1.1", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:01:11",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.2.2", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:02:22",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.3.3", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:03:33",
+                "port": 1
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.4.4", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:04:44",
+                "port": 2
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.5.5", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:05:55",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.6.6", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:06:66",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.7.7", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:07:77",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.8.8", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:08:88",
+                "port": 4
+            }
+        }
+    ],
+    "s3": [
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "default_action": true,
+            "action_name": "PubSubIngress.drop",
+            "action_params": { }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.1.1", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:01:11",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.2.2", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:02:22",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.3.3", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:03:33",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.4.4", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:04:44",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.5.5", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:05:55",
+                "port": 1
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.6.6", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:06:66",
+                "port": 2
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.7.7", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:07:77",
+                "port": 5
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.8.8", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:08:88",
+                "port": 5
+            }
+        }
+    ],
+    "s4": [
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "default_action": true,
+            "action_name": "PubSubIngress.drop",
+            "action_params": { }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.1.1", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:01:11",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.2.2", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:02:22",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.3.3", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:03:33",
+                "port": 3
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.4.4", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:04:44",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.5.5", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:05:55",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.6.6", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:06:66",
+                "port": 4
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.7.7", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:07:77",
+                "port": 1
+            }
+        },
+        {
+            "table": "PubSubIngress.ipv4_lpm",
+            "match": {
+                "hdr.ipv4.dstAddr": ["10.0.8.8", 32]
+            },
+            "action_name": "PubSubIngress.ipv4_forward",
+            "action_params": {
+                "dstAddr": "08:00:00:00:08:88",
+                "port": 2
+            }
+        }
+    ]
+}

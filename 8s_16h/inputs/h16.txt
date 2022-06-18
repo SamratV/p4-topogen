@@ -1,0 +1,2 @@
+subscribe,cpp,0,_
+publish,java,30,Java is platform independent.

@@ -1,0 +1,2 @@
+subscribe,java,0,_
+publish,cpp,30,C++ supports OOPs.

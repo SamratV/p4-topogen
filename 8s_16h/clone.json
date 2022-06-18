@@ -1,0 +1,34 @@
+{
+    "s1": {
+        "max_hosts": 1,
+        "max_ports": 3
+    },
+    "s2": {
+        "max_hosts": 4,
+        "max_ports": 8
+    },
+    "s3": {
+        "max_hosts": 2,
+        "max_ports": 6
+    },
+    "s4": {
+        "max_hosts": 3,
+        "max_ports": 7
+    },
+    "s5": {
+        "max_hosts": 2,
+        "max_ports": 5
+    },
+    "s6": {
+        "max_hosts": 0,
+        "max_ports": 4
+    },
+    "s7": {
+        "max_hosts": 2,
+        "max_ports": 5
+    },
+    "s8": {
+        "max_hosts": 2,
+        "max_ports": 4
+    }
+}

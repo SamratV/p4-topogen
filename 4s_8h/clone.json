@@ -1,0 +1,18 @@
+{
+    "s1": {
+        "max_hosts": 2,
+        "max_ports": 5
+    },
+    "s2": {
+        "max_hosts": 2,
+        "max_ports": 4
+    },
+    "s3": {
+        "max_hosts": 2,
+        "max_ports": 5
+    },
+    "s4": {
+        "max_hosts": 2,
+        "max_ports": 4
+    }
+}
