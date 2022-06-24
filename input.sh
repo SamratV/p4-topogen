@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NUMH=(8, 16)
-NUMP=(4, 32)
-NUMS=(4, 32)
+NUMH=(8 16)
+NUMP=(4 32)
+NUMS=(4 32)
 DIRS=("./4s_8h/" "./8s_16h/")
 
 DIR=${DIRS[$1]}
@@ -15,7 +15,6 @@ TOPIC_FILE="topics.json"
 
 
 let TOPICS="$(sed '/[{}]/d' $TOPIC_FILE | wc -l)"
-echo "topics = $TOPICS"
 rm -f $OUT_DIR/*
 
 for i in $(seq $HOSTS)
