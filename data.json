@@ -1,0 +1,86 @@
+{
+	"s1": {
+		"valid_apph":118,
+		"from_cpu":1,
+		"to_cpu":0
+	},
+	"s2": {
+		"valid_apph":103,
+		"from_cpu":1,
+		"to_cpu":0
+	},
+	"s3": {
+		"valid_apph":116,
+		"from_cpu":1,
+		"to_cpu":0
+	},
+	"s4": {
+		"valid_apph":89,
+		"from_cpu":1,
+		"to_cpu":0
+	},
+	"h1": {
+		"repeated":11,
+		"publish":4,
+		"subscribe":1,
+		"notify":12,
+		"request":5,
+		"response":5
+	},
+	"h2": {
+		"repeated":3,
+		"publish":0,
+		"subscribe":1,
+		"notify":4,
+		"request":1,
+		"response":1
+	},
+	"h3": {
+		"repeated":15,
+		"publish":0,
+		"subscribe":1,
+		"notify":16,
+		"request":1,
+		"response":1
+	},
+	"h4": {
+		"repeated":11,
+		"publish":0,
+		"subscribe":1,
+		"notify":12,
+		"request":1,
+		"response":1
+	},
+	"h5": {
+		"repeated":11,
+		"publish":0,
+		"subscribe":1,
+		"notify":12,
+		"request":1,
+		"response":1
+	},
+	"h6": {
+		"repeated":11,
+		"publish":0,
+		"subscribe":1,
+		"notify":12,
+		"request":1,
+		"response":1
+	},
+	"h7": {
+		"repeated":3,
+		"publish":0,
+		"subscribe":1,
+		"notify":4,
+		"request":1,
+		"response":1
+	},
+	"h8": {
+		"repeated":11,
+		"publish":4,
+		"subscribe":1,
+		"notify":12,
+		"request":5,
+		"response":5
+	}
+}

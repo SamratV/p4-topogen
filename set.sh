@@ -12,7 +12,7 @@ cp "$DIR""topo.json" "$PROJ""topology2.json"
 rm -r "$DIR""inputs"
 mkdir "$DIR""inputs"
 
-python3 input.py $1
+./input.sh $1
 
 rm -r "$PROJ""inputs"
 mkdir "$PROJ""inputs"
